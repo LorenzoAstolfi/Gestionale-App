@@ -1,42 +1,54 @@
-#🚀 Enterprise Employee Management System
-Backend Engineer Project | Java • Spring Boot • SQL
+# 🏢 Enterprise Employee Manager (EEM)
+> **Backend RESTful API progettata con Java & Spring Boot per la gestione avanzata del personale.**
 
-Sistema gestionale robusto progettato per l'amministrazione centralizzata delle risorse umane. L'applicazione facilita il ciclo di vita del dato dell'impiegato, garantendo persistenza sicura, logica di business scalabile e un'interfaccia di comunicazione Web efficiente.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 
-🛠 Stack Tecnologico
-Linguaggio: Java 17+
+---
 
-Framework Core: Spring Boot (Spring Data JPA, Spring Web)
+## 📋 Descrizione del Progetto
+**Enterprise Employee Manager** è un'applicazione gestionale backend-driven focalizzata sull'efficienza operativa. Il progetto implementa un'architettura a strati (Layered Architecture) per gestire il ciclo di vita dei dati dei dipendenti, garantendo scalabilità e manutenibilità.
 
-Persistenza: Database Relazionale (MySQL/PostgreSQL) con Hibernate
+Il sistema espone una serie di **REST APIs** che permettono l'integrazione con qualsiasi interfaccia frontend moderna o sistemi di reportistica aziendale.
 
-Gestione Dipendenze: Maven / Gradle
+## 🚀 Caratteristiche Tecniche
+*   **Architettura REST:** Design coerente degli endpoint per operazioni CRUD (Create, Read, Update, Delete).
+*   **ORM & Persistence:** Utilizzo di **Spring Data JPA** e **Hibernate** per una mappatura efficiente tra oggetti Java e database relazionali.
+*   **Business Logic:** Layer di servizio dedicato per la gestione di validazioni e logiche aziendali complesse.
+*   **Database Integration:** Supporto pre-configurato per MySQL/PostgreSQL.
+*   **Auto-configurazione:** Sfrutta il paradigma *Convention over Configuration* di Spring Boot.
 
-Architettura: RESTful API con pattern MVC (Model-View-Controller)
+## 🛠 Stack Tecnologico
+| Tecnologia | Utilizzo |
+| :--- | :--- |
+| **Java 17+** | Linguaggio di programmazione core |
+| **Spring Boot 3.x** | Framework per lo sviluppo rapido di applicazioni enterprise |
+| **Spring Data JPA** | Astrazione dello strato di persistenza dati |
+| **Hibernate** | Motore ORM (Object-Relational Mapping) |
+| **Maven** | Gestione delle dipendenze e build automation |
+| **H2 / MySQL** | Database per ambienti di test e produzione |
 
-#✨ Caratteristiche Principali
-Operazioni CRUD Complete: Gestione totale (Creazione, Lettura, Aggiornamento, Eliminazione) dei record impiegato.
+---
 
-Data Persistence: Integrazione fluida con database SQL per la salvaguardia dei dati.
+## 🏗️ Architettura del Codice
+Il progetto segue il pattern **MVC (Model-View-Controller)** semplificato per le API:
+1.  **`controller/`**: Gestione dei parametri di ingresso e delle risposte HTTP.
+2.  **`service/`**: Core dell'applicazione (logica di business).
+3.  **`repository/`**: Interfaccia di comunicazione con il database tramite abstraction layer.
+4.  **`model/`**: Definizione delle entità e degli oggetti di dominio.
 
-Web Integration: Esposizione di endpoint professionali per il consumo dei dati tramite client esterni o browser.
+---
 
-Validazione Dati: Implementazione di controlli lato server per garantire l'integrità delle informazioni aziendali.
+## ⚙️ Configurazione e Installazione
 
-#📂 Architettura del Progetto
-Il software segue una struttura a layer per garantire manutenibilità e disaccoppiamento:
+### Requisiti
+*   Java JDK 17 o superiore
+*   Maven 3.6+
+*   Un'istanza di database (MySQL/PostgreSQL) o H2 in-memory
 
-Controller Layer: Gestisce le richieste HTTP e mappa gli endpoint Web.
-
-Service Layer: Contiene la logica di business e i servizi di elaborazione.
-
-Repository Layer: Interfaccia lo strato di persistenza tramite Spring Data JPA.
-
-Model Layer: Definisce l'entità "Impiegato" e la mappatura delle tabelle nel DB.
-
-#🚀 Come Iniziare
-Clona la repository: git clone [https://github.com/tuo-username/gestionale-app.git](https://github.com/tuo-username/gestionale-app.git)
-
-Configurazione DB: Aggiorna il file application.properties con le tue credenziali SQL.
-
-Build & Run: Esegui ./mvnw spring-boot:run
+### Setup Rapido
+1. **Clona il repository**
+   ```bash
+   git clone [https://github.com/tuo-username/nome-repo.git](https://github.com/tuo-username/nome-repo.git)
