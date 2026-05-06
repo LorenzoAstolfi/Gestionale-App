@@ -38,8 +38,3 @@ Il sistema espone una serie di **REST APIs** che permettono l'integrazione con q
 *   Java JDK 17 o superiore
 *   Maven 3.6+
 *   Un'istanza di database (MySQL/PostgreSQL) o H2 in-memory
-
-### Setup Rapido
-1. **Clona il repository**
-   ```bash
-   git clone [https://github.com/tuo-username/nome-repo.git](https://github.com/tuo-username/nome-repo.git)
