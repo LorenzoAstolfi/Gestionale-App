@@ -32,15 +32,6 @@ Il sistema espone una serie di **REST APIs** che permettono l'integrazione con q
 
 ---
 
-## 🏗️ Architettura del Codice
-Il progetto segue il pattern **MVC (Model-View-Controller)** semplificato per le API:
-1.  **`controller/`**: Gestione dei parametri di ingresso e delle risposte HTTP.
-2.  **`service/`**: Core dell'applicazione (logica di business).
-3.  **`repository/`**: Interfaccia di comunicazione con il database tramite abstraction layer.
-4.  **`model/`**: Definizione delle entità e degli oggetti di dominio.
-
----
-
 ## ⚙️ Configurazione e Installazione
 
 ### Requisiti
